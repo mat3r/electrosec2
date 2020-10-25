@@ -1,0 +1,223 @@
+$white: #fff;
+$shadow-color: #ddd;
+$bgc: #e1f5fe;
+$bgc-orange: #ffebcd;
+$fgc: #24246c;
+$grey: #ccc;
+$black: #000;
+$barchart1: #e3ba22;
+$barchart1-highlight: #f2da57;
+$barchart2: #42a5b3;
+$barchart2-highlight: #137b80;
+$barchart3: #f6b656;
+$barchart3-highlight: #e6842a;
+$chart-tick-text: #635f5d;
+$tick-line: #c0c0bb;
+$modal-inner-bgc: #f4f4f4;
+$modal-outer-bgc: rgba(0, 0, 0, .5);
+$modal-shadow1: rgba(0, 0, 0, .2);
+$modal-shadow2: rgba(0, 0, 0, .17);
+$modal-header: #ff7f50;
+
+.container-90 {
+  margin: 10px auto;
+  width: 90%;
+}
+
+.container-95 {
+  margin: 10px auto;
+  width: 95%;
+}
+
+.fit-screen {
+  min-height: 85vh;
+}
+
+.navbar-nav {
+  span {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-right: 150px;
+  }
+}
+
+.user-form {
+  box-shadow: 5px 5px 5px $shadow-color;
+}
+
+.po-svg {
+  rect {
+    fill: $barchart1;
+
+    &:hover {
+      fill: $barchart1-highlight;
+    }
+  }
+}
+
+.proj-svg {
+  rect {
+    fill: $barchart2;
+
+    &:hover {
+      fill: $barchart2-highlight;
+    }
+  }
+}
+
+.eq-svg {
+  rect {
+    fill: $barchart3;
+
+    &:hover {
+      fill: $barchart3-highlight;
+    }
+  }
+}
+
+svg {
+  text {
+    font-size: 1.8em;
+  }
+
+  .tick {
+    text {
+      fill: $chart-tick-text;
+      font-size: 1.2em;
+    }
+
+    line {
+      stroke: $tick-line;
+    }
+  }
+}
+
+.flash {
+  i {
+    margin-right: 10px;
+  }
+}
+
+.std-table {
+  font-size: 12px;
+  line-height: 1.2;
+
+  th {
+    background-color: $bgc;
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+
+.i-modal {
+  animation-duration: .5s;
+  animation-name: modalopen;
+  background-color: $modal-outer-bgc;
+  display: none;
+  height: 100%;
+  left: 50%;
+  overflow: auto;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+
+  .modal-content {
+    background-color: $modal-inner-bgc;
+    box-shadow: 0 5px 8px 0 $modal-shadow1, 0 7px 20px 0 $modal-shadow2;
+    margin: 20% auto;
+    max-width: 100%;
+    width: 800px;
+  }
+
+  .modal-header {
+    background: $modal-header;
+
+    h2 {
+      font-weight: 400;
+      margin-left: 20px;
+    }
+  }
+
+  .close-btn {
+    color: $grey;
+    float: right;
+    font-size: 30px;
+
+    &:hover,
+    &:focus {
+      color: $black;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.edit {
+
+  color: $fgc;
+
+  .form-section {
+    border-color: $bgc;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+
+    &.fixed-data {
+      background-color: $bgc;
+    }
+
+    .issue-row {
+      p {
+        font-size: .875rem;
+      }
+    }
+
+    .issue-header-row {
+      p {
+        font-size: .875rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 4px;
+  }
+}
+
+.value {
+  background-color: $bgc-orange;
+}
+
+.multi-column {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -moz-column-fill: auto;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  -webkit-column-fill: auto;
+  column-count: 2;
+  column-gap: 20px;
+  column-fill: auto;
+  list-style-position: inside;
+}
+
+.message {
+  display: none;
+}
+
+footer {
+  .container {
+    height: 100px;
+  }
+}
+
+@keyframes modalopen {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

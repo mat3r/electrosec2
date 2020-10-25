@@ -1,0 +1,198 @@
+html, body {
+	height: 100%;
+  color: #24246C;
+}
+
+nav{
+	height: 100px;
+	line-height: 40px;
+	position: relative;
+}
+
+nav ul li a,
+nav a {
+  color: #24246C;
+} 
+
+nav ul li:hover {
+   background-color: #e1f5fe;
+}
+
+.nav-wrapper ul {
+	position: absolute;
+	right: 20px;
+	top: 60px;
+}
+
+nav .brand-logo img {
+	width: 250px;
+}
+
+.blue-bg {
+	background: rgba(13, 71, 161, 0.3);
+	border-radius: 10px;
+	padding: 10px 30px;
+}
+
+#services .card-title {
+	font-size: 2rem;
+	text-shadow: 1px 1px 1px black;
+}
+.product img {
+	width: 90%;
+	box-shadow: 4px 4px 4px grey;
+}
+
+.product-content {
+	margin-bottom: 50px;
+}
+
+.partner-logo {
+	height: 100px;
+}
+
+.partner-scope {
+	margin-bottom: 50px;
+}
+
+.page-footer {
+	background-color: #e1f5fe;
+	color: #24246c;
+}
+
+.page-footer p {
+	color: #24246c;
+}
+
+.page-footer table td {
+	padding-bottom: 0;
+}
+
+.page-footer span {
+	font-weight: bold;
+	padding-left: 1rem;
+}
+
+.page-footer .social {
+	min-height: 100px;
+}
+
+.page-footer h5 {
+	margin-top: 0;
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+
+.page-footer h6 {
+	padding-top: 10px;
+}
+
+.grey-bg {
+	background: rgba(69, 90, 100, 0.3);
+	border-radius: 5px;
+}
+
+.page-footer .top-row {
+	padding-top: 20px;
+}
+
+.page-footer .input-field {
+	margin: 0;
+}
+
+.page-footer tr {
+	border: none;
+}
+.page-footer button {
+	margin-bottom: 15px;
+}
+
+input::-webkit-input-placeholder {
+	color: #78909c !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+	color: #78909c !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+	color: #78909c !important;
+}
+
+input:-ms-input-placeholder {
+	color: #78909c !important;
+}
+
+/*--- Media Queries ---*/
+@media (max-width: 992px) {
+	#services .card-title {
+		font-size: 2rem;
+	}
+
+	#services .card-content p {
+		font-size: 1.4rem;
+	}
+
+	.spacing {
+		margin-bottom : 10px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	nav {
+		height: 50px;
+	}
+
+	nav .brand-logo img {
+		width: 180px;
+	}
+}
+
+/*--- Fixed Background Image ---*/
+figure {
+  height: 50%;
+  margin: 0!important;
+  position: relative;
+  width: 100%;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#fixed1 {
+  background-image: url('/images/handshakeS.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+#fixed2 {
+  background-image: url('/images/leadingS.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+

@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Static files
+public/images/originals
+public/data
+
+# dotenv environment variables file
+.env
